@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import Navbar from "./components/Navbar";
 import FormField from "./components/FormField";
 import CoolButton from "./components/CoolButton";
-import './App.css';
+
 
 function App extends Component {
   render() {
