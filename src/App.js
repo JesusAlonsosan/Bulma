@@ -1,26 +1,37 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from "react";
 import Navbar from "./components/Navbar";
 import FormField from "./components/FormField";
-import CoolButton from "./components/CoolButton";
+import Button from "./components/Button";
 
 
-function App extends Component {
+class App extends Component {
   render() {
     return (
-      <div>
+      <div className="App">
         <Navbar />
-        <FormField />
+
         <FormField
-          label=""
-          type=""
-          placeholder=""
-        />
-        <FormField />
-        <CoolButton />
-
-
+          label="Nombre"
+          type="text"
+          placeholder="" />
+        
+        <FormField
+          label="Email"
+          type="email"
+          placeholder="" />
+        
+        <FormField
+          label="Contraseña"
+          type="password"
+          placeholder="" />
+        
+        <Button
+          className="button is-success"
+          label="Sign Up" />
+        
       </div>
-    )
+    );
+  }
+}
 
 export default App;
